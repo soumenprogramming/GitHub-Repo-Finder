@@ -32,7 +32,8 @@ git clone https://github.com/soumenprogramming/GitHub-Repo-Finder.git
 cd GitHub-Repo-Finder
 sh gradlew bootrun
 ```
-then go to http://localhost:8080
+then go to http://localhost:8080  
+if you want to check my hosted app visit https://github-repo-finder-production.up.railway.app/
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
