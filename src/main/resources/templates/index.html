@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Redirect</title>
+    <style>
+        /* Background with gradient */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Stylish card box */
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            width: 350px;
+            backdrop-filter: blur(8px);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        /* Input field */
+        input {
+            padding: 10px;
+            width: 80%;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            outline: none;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        /* Button Styling */
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background: #ff7300;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Button Hover Effect */
+        button:hover {
+            background: #ff5700;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Enter the GitHub Username</h2>
+    <form action="/redirect" method="get">
+        <input type="text" name="username" placeholder="GitHub Username" required>
+        <br>
+        <button type="submit">Go to Profile</button>
+    </form>
+</div>
+
+</body>
+</html>
